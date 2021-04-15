@@ -1,5 +1,5 @@
 {
-  "name": "my-book",
+  "name": "mannysbook",
   "version": "2.0.0",
   "description": "",
   "files": [
@@ -26,5 +26,5 @@
     "esbuild": "0.8.26",
     "typescript": "^4.2.4"
   },
-  "gitHead": "8dd755da52dfcf00805f45e090ed46c6e507b32b"
+  "gitHead": "ba96a5fa561832ef77e70bac6b991e72c28e638f"
 }
