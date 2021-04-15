@@ -1,6 +1,6 @@
 {
   "name": "mannysbook",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "",
   "files": [
     "dist"
@@ -28,4 +28,3 @@
   },
   "gitHead": "ba96a5fa561832ef77e70bac6b991e72c28e638f"
 }
-
