@@ -33,7 +33,7 @@ Mannysbook opens on localhost:4005 by default. You can change this with -p or --
 
 -  You can use the `show()` function to render anything inside it to the iframe
  -  You can hover above or below any cell to show buttons to add more cells
- - Any code written in a cell can be used in cells below, but not above the cell.
+ - Any code written in a cell can be used in cells below it, code bundles from top to bottom.
  - You can have text cells for documentation/comments (though you can still use regular JS comments). These text cells have markdown capabilities
 -  React/ReactDOM are programmatically imported
 -  the iframe has a root div
