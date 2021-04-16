@@ -4,25 +4,33 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 
 import { createCellsRouter } from "./routes/cell";
 
-export const serve = (port: number, filename: string, dir: string, useProxy: boolean) => {
-  const app = express();
+// yo!
+export const serve = (
+	port: number,
+	filename: string,
+	dir: string,
+	useProxy: boolean
+) => {
+	const app = express();
 
-  app.use(createCellsRouter(filename, dir));
+	app.use(createCellsRouter(filename, dir));
 
-  if (useProxy) {
-    app.use(
-      createProxyMiddleware({
-        target: "http://localhost:3000",
-        ws: true,
-        logLevel: "silent",
-      }),
-    );
-  } else {
-    const packagePath = require.resolve("@my-book/local-client/build/index.html");
-    app.use(express.static(path.dirname(packagePath)));
-  }
+	if (useProxy) {
+		app.use(
+			createProxyMiddleware({
+				target: "http://localhost:3000",
+				ws: true,
+				logLevel: "silent",
+			})
+		);
+	} else {
+		const packagePath = require.resolve(
+			"@my-book/local-client/build/index.html"
+		);
+		app.use(express.static(path.dirname(packagePath)));
+	}
 
-  return new Promise<void>((res, rej) => {
-    app.listen(port, res).on("error", rej);
-  });
+	return new Promise<void>((res, rej) => {
+		app.listen(port, res).on("error", rej);
+	});
 };

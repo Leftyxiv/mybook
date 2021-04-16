@@ -1,10 +1,11 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  },
-  "scripts": {
-    "start": "lerna run start --parallel"
-  }
+	"name": "root",
+	"private": false,
+	"devDependencies": {
+		"lerna": "^3.22.1"
+	},
+	"scripts": {
+		"start": "lerna run start --parallel"
+	},
+	"version": "3.0.3"
 }
