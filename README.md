@@ -40,6 +40,9 @@ Mannysbook opens on localhost:4005 by default. You can change this with -p or --
 -  you can import and use any npm package
 -  **requires node v14 or newer**
 
+## Video
+A quick instructional video can be found here: https://www.youtube.com/watch?v=0NybLaJEkuY
+
 ## Found a bug?
 Message Manny Ledoux on the KenzieTown Slack
 or send an email to [manny@aledoux.net](mailto:Manny@aledoux.net) to submit the bug you found. Please be descriptive!
